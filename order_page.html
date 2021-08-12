@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Тубетей - Delivery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/order_page.css">
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="d-left-side dfa-center">
+              <div class="d-logo dfa-center">
+                <img src="assets/img/logo.png" alt="LOGO">
+                <h4>Delivery</h4>
+              </div>
+              <div class="message-btns dfa-center">
+                <button><img src="assets/img/icons/phone.png" alt=""><span>3</span>Обработка</button>
+                <button><img src="assets/img/icons/plane.png" alt=""><span>1</span>Готовые</button>
+              </div>
+            </div>
+            <div class="d-right-side dfa-center">
+                <button id="toggle_menu"><i class="far fa-bars"></i></button>
+              <a class="d-link" href="settings.html">Настройки</a>
+              <div class="d-user-meta dfa-center">
+                <img src="assets/img/icons/user.png" alt="">
+                <h4><span>Менеджер</span> • <span>Камиль</span></h4>
+              </div>
+                <button class="d-add_new_order">Создать новый</button>
+                <button class="d-exit-session"><img src="assets/img/icons/exit.png"></button>
+            </div>
+          </div>
+        </div>
+      <nav>
+        <div class="container">
+          <div class="row">
+            <ul class="d-menu">
+              <li><a href="upon.html">В работе • <span>8</span></a></li>
+              <li><a href="new_orders.html">Новые заказы • <span>7</span></a></li>
+              <li><a href="routs.html">Маршруты • <span>3</span></a></li>
+              <li><a href="completed.html">Завершенные • <span>16</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-order-actions p-sm-0">
+            <div class="d-order-actions-top dfa-center">
+                <h4>Заказ • 2948</h4>
+                <select name="status">
+                    <option value="В обработке">В обработке</option>
+                    <option value="Готовится">Готовится</option>
+                </select>
+                  <span>26 февраля • 18:00</span>
+            </div>
+            <div class="d-order-actions-content">
+                <ul class="d-action-content-menu">
+                  <li><a class="active" href="javascript:void(0)">Клиент</a></li>
+                  <li><a href="javascript:void(0)">Меню</a></li>
+                  <li><a href="javascript:void(0)">История заказов</a></li>
+                  <li><a href="javascript:void(0)">Адреса</a></li>
+                </ul>
+                <hr>
+                <div class="d-action-tab">
+                    <div class="d-tab-meta-info">
+                        <h4>Информация</h4>
+                        <label>
+                          <span>Имя</span>
+                            <p>Александр</p>
+                        </label>
+                        <label>
+                          <span>Номер телефона</span>
+                            <p>+7 953 648-54</p>
+                        </label>
+                        <label>
+                            <span>Электронная почта</span>
+                            <p>alexgd@mail.com</p>
+                        </label>
+                        <label>
+                            <span>Комментарий</span>
+                            <p>Нужно упаковать в 3 разных пакета. Сказать курьеру что бы не смотрел в глаза</p>
+                        </label>
+                        <!-- Address Info -->
+                        <h4>Адрес доставки</h4>
+                        <label>
+                          <span>Улица.дом</span>
+                            <p>Восстания, дом 4</p>
+                        </label>
+                        <label class="d-inp-min">
+                          <span>Квартира</span>
+                            <p>84</p>
+                        </label>
+                        <label class="d-inp-min">
+                          <span>Подъезд</span>
+                            <p>4</p>
+                        </label>
+                        <label class="d-inp-min">
+                          <span>Домофон</span>
+                            <p>4</p>
+                        </label>
+                        <label class="d-inp-min">
+                          <span>Этаж</span>
+                            <p>6</p>
+                        </label>
+                        <!-- Deliver service info -->
+                        <h4>Доставка</h4>
+                        <label>
+                            <span>Служба доставки</span>
+                            <p>Тюбетей Казань</p>
+                        </label>
+                        <label class="d-inp-min">
+                            <span>Точка</span>
+                            <p>Кулагина</p>
+                        </label>
+                        <label class="d-inp-min">
+                            <span>Ко времени</span>
+                            <p>18:45</p>
+                        </label>
+                        <label>
+                            <span>Курьер</span>
+                            <p>Не назначен</p>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="d-favorite-dishes">
+                        <h4>Либимые позиции клиента</h4>
+                        <div class="d-favorite-item">
+                            <div class="d-dish-item-img">
+                                <img src="assets/img/1.png">
+                            </div>
+                            <div class="d-dish-desc">
+                                <div class="d-desc-top">
+                                    <span>65 ₽</span>
+                                    <p>Элеш с курицей</p>
+                                </div>
+                                <div class="d-desc-bottom">
+                                    <i id="0001" class="far fa-plus"></i>
+                                    <span>170 г</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-favorite-item">
+                            <div class="d-dish-item-img">
+                                <img src="assets/img/2.png">
+                            </div>
+                            <div class="d-dish-desc">
+                                <div class="d-desc-top">
+                                    <span>125 ₽</span>
+                                    <p>Компот из сухофрукта..</p>
+                                </div>
+                                <div class="d-desc-bottom">
+                                    <i id="0002" class="far fa-plus"></i>
+                                    <span>1 л</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-favorite-item">
+                            <div class="d-dish-item-img">
+                                <img src="assets/img/3.png">
+                            </div>
+                            <div class="d-dish-desc">
+                                <div class="d-desc-top">
+                                    <span>65 ₽</span>
+                                    <p>Королевская ватрушка</p>
+                                </div>
+                                <div class="d-desc-bottom">
+                                    <i id="0004" class="far fa-plus"></i>
+                                    <span>170 г</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-action-tab">
+                    <ul class="d-menu-tabs-header">
+                        <li>Полуфабрикаты</li>
+                        <li>Продукты</li>
+                        <li>Пироги</li>
+                        <li class="active">Выпечка и десерты</li>
+                        <li>Напитки</li>
+                        <li>Из ресторана</li>
+                    </ul>
+                    <div class="d-menu-tab"><h1>Tab 1</h1></div>
+                    <div class="d-menu-tab"><h1>Tab 2</h1></div>
+                    <div class="d-menu-tab"><h1>Tab 3</h1></div>
+                    <div class="d-menu-tab">
+                            <div class="d-dish-item">
+                                <div class="d-dish-item-img">
+                                    <img src="assets/img/dishes/1.jpg">
+                                </div>
+                                <div class="d-dish-desc">
+                                    <div class="d-desc-top">
+                                        <span>65 ₽</span>
+                                        <p>Эчпочмак с рубленой говядиной</p>
+                                    </div>
+                                    <div class="d-desc-bottom">
+                                        <i id="0005" class="far fa-plus"></i>
+                                        <span>170 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-dish-item">
+                                <div class="d-dish-item-img">
+                                    <img src="assets/img/dishes/2.jpg">
+                                </div>
+                                <div class="d-dish-desc">
+                                    <div class="d-desc-top">
+                                        <span>125 ₽</span>
+                                        <p>традиционный элеш с курицей</p>
+                                    </div>
+                                    <div class="d-desc-bottom">
+                                        <i id="0006" class="far fa-plus"></i>
+                                        <span>1 л</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-dish-item">
+                                <div class="d-dish-item-img">
+                                    <img src="assets/img/dishes/8.jpg">
+                                </div>
+                                <div class="d-dish-desc">
+                                    <div class="d-desc-top">
+                                        <span>65 ₽</span>
+                                        <p>Эчпочмаки фри с говядиной</p>
+                                    </div>
+                                    <div class="d-desc-bottom">
+                                        <i id="0007" class="far fa-plus"></i>
+                                        <span>170 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-dish-item">
+                                <div class="d-dish-item-img">
+                                    <img src="assets/img/dishes/8.jpg">
+                                </div>
+                                <div class="d-dish-desc">
+                                    <div class="d-desc-top">
+                                        <span>65 ₽</span>
+                                        <p>Эчпочмак с рубленой говядиной</p>
+                                    </div>
+                                    <div class="d-desc-bottom">
+                                        <i id="0008" class="far fa-plus"></i>
+                                        <span>170 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-dish-item">
+                                <div class="d-dish-item-img">
+                                    <img src="assets/img/dishes/3.jpg">
+                                </div>
+                                <div class="d-dish-desc">
+                                    <div class="d-desc-top">
+                                        <span>125 ₽</span>
+                                        <p>традиционный элеш с курицей</p>
+                                    </div>
+                                    <div class="d-desc-bottom">
+                                        <i id="0009" class="far fa-plus"></i>
+                                        <span>1 л</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-dish-item">
+                                <div class="d-dish-item-img">
+                                    <img src="assets/img/dishes/4.jpg">
+                                </div>
+                                <div class="d-dish-desc">
+                                    <div class="d-desc-top">
+                                        <span>65 ₽</span>
+                                        <p>Эчпочмаки фри с говядиной</p>
+                                    </div>
+                                    <div class="d-desc-bottom">
+                                        <i id="0010" class="far fa-plus"></i>
+                                        <span>170 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-dish-item">
+                                <div class="d-dish-item-img">
+                                    <img src="assets/img/dishes/5.jpg">
+                                </div>
+                                <div class="d-dish-desc">
+                                    <div class="d-desc-top">
+                                        <span>65 ₽</span>
+                                        <p>Эчпочмак с рубленой говядиной</p>
+                                    </div>
+                                    <div class="d-desc-bottom">
+                                        <i id="0011" class="far fa-plus"></i>
+                                        <span>170 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-dish-item">
+                                <div class="d-dish-item-img">
+                                    <img src="assets/img/dishes/6.jpg">
+                                </div>
+                                <div class="d-dish-desc">
+                                    <div class="d-desc-top">
+                                        <span>125 ₽</span>
+                                        <p>традиционный элеш с курицей</p>
+                                    </div>
+                                    <div class="d-desc-bottom">
+                                        <i id="0013" class="far fa-plus"></i>
+                                        <span>1 л</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-dish-item">
+                                <div class="d-dish-item-img">
+                                    <img src="assets/img/dishes/7.jpg">
+                                </div>
+                                <div class="d-dish-desc">
+                                    <div class="d-desc-top">
+                                        <span>65 ₽</span>
+                                        <p>Эчпочмаки фри с говядиной</p>
+                                    </div>
+                                    <div class="d-desc-bottom">
+                                        <i id="0014" class="far fa-plus"></i>
+                                        <span>170 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="d-menu-tab"><h1>Tab 5</h1></div>
+                    <div class="d-menu-tab"><h1>Tab 6</h1></div>
+                </div>
+                <div class="d-action-tab">
+                    <div class="d-history-item">
+                        <div class="d-history-header">
+                            <div class="d-his-l">
+                                <h4>Заказ • 2948</h4>
+                                <p>доставлен</p>
+                                <span>26 февраля • 18:00</span>
+                            </div>
+                            <div class="d-his-r">
+                                <button class="d-add_new_order">Повторить заказ</button>
+                            </div>
+                        </div>
+                        <ul class="d-his-dishes">
+                            <li>
+                                <p class="d-pice-name">традиционный элеш с курицей</p>
+                                <div class="d-dish-set">
+                                    <span>125 ₽ шт</span>
+                                    <p class="d-pices">1 шт</p>
+                                </div>
+                                <p class="d-pices-total-p">125 ₽</p>
+                            </li>
+                            <li>
+                                <p class="d-pice-name">Эчпочмак с рубленой говядиной</p>
+                                <div class="d-dish-set">
+                                    <span>65 ₽ шт</span>
+                                    <p class="d-pices">1 шт</p>
+                                </div>
+                                <p class="d-pices-total-p">65 ₽</p>
+                            </li>
+                            <li>
+                                <p class="d-pice-name">Эчпочмаки фри с говядиной</p>
+                                <div class="d-dish-set">
+                                    <span>65 ₽ шт</span>
+                                    <p class="d-pices">1 шт</p>
+                                </div>
+                                <p class="d-pices-total-p">65 ₽</p>
+                            </li>
+                            </ul>
+                            <div class="d-history-bottom">
+                                <h4>Итого</h4>
+                                <h4>490 ₽</h4>
+                            </div>
+                    </div>
+                    <div class="d-history-item">
+                        <div class="d-history-header">
+                            <div class="d-his-l">
+                                <h4>Заказ • 2948</h4>
+                                <p>доставлен</p>
+                                <span>26 февраля • 18:00</span>
+                            </div>
+                            <div class="d-his-r">
+                                <button class="d-add_new_order">Повторить заказ</button>
+                            </div>
+                        </div>
+                        <ul class="d-his-dishes">
+                            <li>
+                                <p class="d-pice-name">традиционный элеш с курицей</p>
+                                <div class="d-dish-set">
+                                    <span>125 ₽ шт</span>
+                                    <p class="d-pices">1 шт</p>
+                                </div>
+                                <p class="d-pices-total-p">125 ₽</p>
+                            </li>
+                            <li>
+                                <p class="d-pice-name">Эчпочмак с рубленой говядиной</p>
+                                <div class="d-dish-set">
+                                    <span>65 ₽ шт</span>
+                                    <p class="d-pices">1 шт</p>
+                                </div>
+                                <p class="d-pices-total-p">65 ₽</p>
+                            </li>
+                            <li>
+                                <p class="d-pice-name">Эчпочмаки фри с говядиной</p>
+                                <div class="d-dish-set">
+                                    <span>95 ₽ шт</span>
+                                    <p class="d-pices">2 шт</p>
+                                </div>
+                                <p class="d-pices-total-p">190 ₽</p>
+                            </li>
+                            </ul>
+                            <div class="d-history-bottom">
+                                <h4>Итого</h4>
+                                <h4>490 ₽</h4>
+                            </div>
+                    </div>
+                </div>
+                <div class="d-action-tab">
+                    <div class="d-address-item">
+                        <div class="d-address-header">
+                            <div class="d-address-l">
+                                <h4>Адрес • 1</h4>
+                                <span>Добавлен 24 Февраля 2021, 08:22</span>
+                            </div>
+                            <div class="d-address-r">
+                                <button class="d-add_new_order">Применить</button>
+                                <button name="button"><i class="far fa-close"></i></button>
+                            </div>
+                        </div>
+                        <div class="d-address-content">
+                            <h4>Казань, улица Восстания, 56, кв. 4</h4>
+                            <p>Комментарий • Нужно упаковать в 3 разных пакета. Сказать курьеру что бы не смотрел в глаза</p>
+                        </div>
+                    </div>
+                    <div class="d-address-item">
+                        <div class="d-address-header">
+                            <div class="d-address-l">
+                                <h4>Адрес • 2</h4>
+                                <span>Добавлен 24 Февраля 2021, 08:22</span>
+                            </div>
+                            <div class="d-address-r">
+                                <button class="d-add_new_order">Применить</button>
+                                <button name="button"><i class="far fa-close"></i></button>
+                            </div>
+                        </div>
+                        <div class="d-address-content">
+                            <h4>Казань, улица Восстания, 56, кв. 4</h4>
+                            <p>Комментарий • Нужно упаковать в 3 разных пакета. Сказать курьеру что бы не смотрел в глаза</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="col-lg-4 d-order-contains p-sm-0">
+               <div class="d-contains-spacer">
+                   <div class="d-order-actions-top dfa-center">
+                       <h4>Состав заказа</h4>
+                    </div>
+                    <form class="d-contains-content">
+                        <div class="d-contains-promo">
+                            <div class="d-promo-left">
+                                <h4>Бонусы • <span>570</span> ₽</h4>
+                                <label id="bonus" class="d-bonus">
+                                    <div>
+                                        <span>Списать</span>
+                                        <p>200</p>
+                                    </div>
+                                    <div class="d-item-select-side dfa-center">
+                                        <label id="bonus-checkbox" class="d-checkbox">
+                                          <input type="checkbox">
+                                          <span class="d-mark"></span>
+                                        </label>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="d-promo-right">
+                                <h4>Промокод к заказу</h4>
+                                <label id="promocode">
+                                    <span>По акции</span>
+                                    <select>
+                                        <option value="0">Тип</option>
+                                        <option value="90">Три к двум</option>
+                                        <option value="120">Один к двум</option>
+                                        <option value="45">Два к двум</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-contains-position">
+                            <div class="d-position-top">
+                                <h3>Позиции • <span>3</span></h3>
+                                <p>оплачено картой</p>
+                            </div>
+                            <ul id="selected-dishes-list" class="d-position-selected-dishes">
+
+                            </ul>
+                            <hr>
+                            <ul class="d-bonus-list">
+                                <li>
+                                    <span>Доставка</span>
+                                    <p id="delivery-price" class="d-pices-total-p"><span>65</span> ₽</p>
+                                </li>
+                                <li>
+                                    <span>Бонусы</span>
+                                    <p id="sale-bonus" class="d-pices-total-p d-minus">0 ₽</p>
+                                </li>
+                                <li>
+                                    <span>Промокод</span>
+                                    <p id="sale-promo" class="d-pices-total-p d-minus">0 ₽</p>
+                                </li>
+                            </ul>
+                            <hr>
+                            <div class="d-contains-total">
+                                <h2>Итого</h2>
+                                <h2><span id="total-order-price">0</span> ₽</h2>
+                            </div>
+                            <div class="d-payment-info">
+                                <label>
+                                    <span>Персон</span>
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    <span>Оплата</span>
+                                    <select>
+                                        <option value="Наличными">Наличными</option>
+                                        <option value="Картой">Картой</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    <span>Сдача со суммы</span>
+                                    <input type="number" value="1000">
+                                </label>
+                                <label class="surrender">
+                                    <span>Сдача</span>
+                                    <p>660</p>
+                                </label>
+                            </div>
+                            <div class="d-total-action">
+                                <button type="submit" name="save">Сохранить</button>
+                                <button type="submit" name="print-bill">Печать чека</button>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <ul class="footer">
+                    <li>
+                        <a href="#">Tubatay.Delivery.com</a>
+                    </li>
+                    <li>
+                        <a href="#">Сообщить об ошибке</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--- POPUP CONTENT --->
+    <div id="create-new" class="d-popup-overlay d-popup-disable">
+        <div class="d-popup-content">
+            <div class="d-popup-header">
+                <h3>Новый заказ</h3>
+                <i id="close-popup" class="far fa-times"></i>
+            </div>
+            <div class="d-popup-tabs">
+                <button class="active-tab">Новый клиент</button>
+                <button>Клиент в базе</button>
+            </div>
+            <div class="d-popup-tabs-content">
+                <div class="d-popup-tab">
+                    <form class="d-popup-form" action="#">
+                        <label>
+                          <span>Имя</span>
+                            <input type="text" value="Александр">
+                        </label>
+                        <label>
+                          <span>Номер телефона</span>
+                            <input type="tel" value="+7 953 648-54">
+                        </label>
+                        <label>
+                          <span>Улица.дом</span>
+                            <input type="text" value="Восстания, дом 4">
+                        </label>
+                        <label>
+                          <span>Квартира</span>
+                            <input type="text" value="4">
+                        </label>
+                        <label>
+                          <span>Подъезд</span>
+                            <input type="text" value="1">
+                        </label>
+                        <label>
+                          <span>Домофон</span>
+                            <input type="text" value="4">
+                        </label>
+                        <label>
+                          <span>Этаж</span>
+                            <input type="text" value="6">
+                        </label>
+                        <div class="d-form-action">
+                            <button type="submit" >Создать заказ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-popup-tab">
+                    <form class="d-db-client" action="#">
+                        <label class="d-db-label">
+                          <i class="far fa-search"></i>
+                            <input type="search" placeholder="Поиск по номеру">
+                        </label>
+                        <div class="d-search-result">
+                            <div class="d-result-item">
+                                <div class="d-flex">
+                                    <span class="d-result-user"><i class="fal fa-user"></i></span>
+                                    <div class="d-result-info">
+                                        <span>+7 845 457-96-34</span>
+                                        <h4>Ильдар Давлетшин</h4>
+                                    </div>
+                                </div>
+                                <div class="d-item-select-side dfa-center">
+                                    <label class="d-checkbox">
+                                      <input type="checkbox">
+                                      <span class="d-mark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="d-result-item">
+                                <div class="d-flex">
+                                    <span class="d-result-user"><i class="fal fa-user"></i></span>
+                                    <div class="d-result-info">
+                                        <span>+7 845 457-96-34</span>
+                                        <h4>Ильдар Давлетшин</h4>
+                                    </div>
+                                </div>
+                                <div class="d-item-select-side dfa-center">
+                                    <label class="d-checkbox">
+                                      <input type="checkbox">
+                                      <span class="d-mark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="d-result-item">
+                                <div class="d-flex">
+                                    <span class="d-result-user"><i class="fal fa-user"></i></span>
+                                    <div class="d-result-info">
+                                        <span>+7 845 457-96-34</span>
+                                        <h4>Ильдар Давлетшин</h4>
+                                    </div>
+                                </div>
+                                <div class="d-item-select-side dfa-center">
+                                    <label class="d-checkbox">
+                                      <input type="checkbox">
+                                      <span class="d-mark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-form-action">
+                            <button type="submit" name="save">Создать заказ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--- POPUP CONTENT END --->
+
+  </body>
+  <script type="text/javascript" src="common.js"></script>
+  <script type="text/javascript" src="js/order_page.js"></script>
+</html>

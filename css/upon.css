@@ -1,0 +1,418 @@
+/*Rulling Block*/
+.d-rulling-block{
+    height: 75vh;
+    overflow-y: scroll;
+}
+/*Scrollbar styles*/
+.d-rulling-block::-webkit-scrollbar{
+    width: 10px;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+}
+.d-rulling-block::-webkit-scrollbar-thumb {
+  background: #b5b5b5;
+  border-radius: 10px;
+  border: 3px solid #e7e7e7;
+}
+.d-rulling-block-top{
+  margin-right: 15px;
+}
+.d-rulling-block-top h4.active{
+    color: var(--green);
+}
+.d-rulling-block-top h4{
+    position: relative;
+    color: #8c9b99;
+}
+.d-rulling-block-top h4 span{
+    position: absolute;
+    top: -20px;
+    left: calc( 45% - 10px );
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 50%;
+    margin: 0 10px;
+    height: 20px;
+    width: 20px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.d-title {
+    color: var(--dark-green);
+}
+
+/*Rulling content*/
+.d-rulling-content {
+  margin-right: 15px;
+}
+.d-rulling-item{
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  margin-bottom: 15px
+}
+.d-item-info-side{
+  width: 95%;
+  padding: 15px;
+}
+.d-info-reception{
+    width: 30%;
+}
+.d-info-reception h4, .d-info-deadline h4{
+    margin: 10px 0 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+.d-info-state-id span {
+    color: var(--white);
+    background-color: var(--green);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.d-info-state-id h4 {
+    color: var(--orange);
+}
+.d-info-clock {
+    background-color: var(--gray);
+    border-radius: 10px;
+    padding: 5px 10px;
+    height: fit-content;
+}
+.d-info-clock span {
+    font-size: 14px;
+    color: var(--light-green);
+}
+.d-info-clock h4{
+    margin: 0;
+    font-weight: 500;
+}
+.d-info-address {
+    width: 60%;
+    margin-left: 25px;
+}
+.d-info-fromto span {
+    color: var(--light-green);
+    font-size: 14px;
+}
+.d-info-fromto p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-green);
+}
+.d-info-fromto p:nth-child(even){
+    text-align: end;
+}
+.d-fromto-line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: var(--orange);
+    margin: 10px 0;
+}
+.d-fromto-line::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -4px;
+    width: 10px;
+    height: 10px;
+    background: var(--orange);
+    border-radius: 50%;
+}
+.d-fromto-line::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 10px;
+    height: 10px;
+    background: var(--white);
+    border-radius: 50%;
+    border: 2px solid var(--orange);
+}
+.d-info-deadline{
+    margin-left: 25px
+}
+/*Info downn*/
+.d-info-downner{
+    margin-top: 15px;
+    border-top: 1px solid #e8e7e7;
+    padding: 10px 0
+}
+.d-down-left span, .d-down-right span{
+    color: var(--white);
+    background: var(--orange);
+    height: fit-content;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.d-down-right span{
+    background-color: var(--green);
+}
+.d-down-left i{
+    margin-right: 5px;
+}
+.d-down-left p, .d-down-right p{
+    font-size: 14px;
+    font-weight: 600;
+    height: fit-content;
+    margin: 0;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--green);
+    background: var(--gray);
+}
+.d-down-right p{
+    color: var(--light-green);
+    background-color: transparent;
+    text-align: end;
+}
+/*Will be ready*/
+.d-wills .d-info-state-id span{
+    color: var(--green);
+    background: var(--gray);
+    font-weight: 600;
+}
+.d-wills .d-fromto-line, .d-wills .d-fromto-line::before {
+    background: var(--green);
+}
+.d-wills .d-fromto-line::after{
+    border-color: var(--green);
+}
+.d-wills .d-down-left span{
+    background: var(--green);
+}
+/*MAP*/
+.d-map{
+    margin-top: 25px;
+    overflow: hidden;
+}
+#create-new-rout-btn{
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    left: 15px;
+}
+.d-map iframe{
+    border: 0;
+    height: 100%;
+    filter: hue-rotate(280deg);
+}
+
+
+/*Create Rout PopUp*/
+#create-new-rout .d-popup-content {
+    width: 70%;
+    border-radius: 35px;
+    padding: 0;
+    overflow: hidden;
+}
+#create-new-rout .d-popup-content form {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.d-new-rout .d-popup-header, .d-deliver-list .d-popup-header {
+    margin-bottom: 15px;
+}
+.d-new-rout {
+    width: 55%;
+    padding: 5% 6%;
+    background: var(--gray);
+    border-radius: 35px;
+}
+.d-rout-couter {
+    display: flex;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 15px 0;
+}
+.d-rout-couter span {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0 15px;
+}
+.d-rout-couter span i {
+    font-size: 24px;
+    color: var(--dark-green);
+}
+.d-create-rout-info span {
+    justify-content: left;
+    padding: 0;
+    font-size: 14px;
+    color: var(--light-green);
+}
+.d-create-rout-info h4 {
+    margin: 0;
+    color: var(--dark-green);
+    font-size: 16px;
+}
+.d-rout-point-list {
+    padding: 0;
+}
+.d-rout-point-list li {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--white);
+    padding: 15px 15px 15px 57px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.d-rout-point-list li::before {
+    content: "";
+    position: absolute;
+    left: calc( 57px / 2 - 7px);
+    top: 40%;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 2px solid var(--dark-green);
+    background: var(--white);
+    z-index: 2;
+}
+.d-rout-point-list li::after {
+    content: "";
+    position: absolute;
+    left: calc( 57px / 2 - 2px);
+    top: 52%;
+    width: 2px;
+    height: 100%;
+    background: var(--dark-green);
+    z-index: 1;
+}
+.d-rout-point-list li:first-child{
+    background: transparent;
+}
+.d-rout-point-list li:first-child::before{
+    background: var(--dark-green);
+}
+.d-rout-point-list li:last-child::after{
+    content: none;
+}
+.d-point-address span, .d-point-time span {
+    font-size: 14px;
+    color: var(--light-green);
+}
+.d-point-address h4 {
+    margin: 0;
+    font-size: 16px;
+    color: var(--dark-green);
+}
+.d-point-time {
+    text-align: end;
+}
+.d-point-time p {
+    margin: 0;
+    font-size: 18px;
+    color: var(--orange);
+}
+.d-create-rout {
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Mont', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    padding: 15px 0;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    background: var(--orange);
+}
+.d-create-rout:hover {
+    color: var(--orange);
+    background: var(--white);
+}
+
+
+
+.d-deliver-list {
+    width: 45%;
+    padding: 5% 6%;
+}
+.d-free-now p, .d-released p {
+    color: var(--orange);
+    font-size: 14px;
+}
+
+/*----------------- MEDIA CSS ----------------*/
+@media (max-width: 1200px) {
+    .d-rulling-content {
+        overflow-x: scroll;
+    }
+    .d-rulling-item {
+        width: 130%;
+    }
+    .d-rulling-content::-webkit-scrollbar{
+        border-radius: 10px
+    }
+    #create-new-rout .d-popup-content {
+        width: 90%;
+    }
+}
+@media (max-width: 992px) {
+    .d-title {
+        font-size: 16px;
+    }
+    .d-rulling-item {
+        width: 165%;
+    }
+    .d-rulling-block-top h4 {
+        font-size: 14px;
+    }
+    .d-rulling-block-top h4 span {
+        font-size: 10px;
+        height: 15px;
+        width: 15px;
+        top: -15px;
+    }
+    .d-info-state-id h4 {
+        font-size: 22px;
+    }
+    .d-info-reception h4, .d-info-deadline h4 {
+        font-size: 22px;
+    }
+    .d-info-clock span {
+        font-size: 12px;
+    }
+    .d-info-fromto span {
+        font-size: 12px;
+    }
+    .d-info-fromto p {
+        font-size: 14px;
+    }
+    .d-down-left span, .d-down-right span {
+        font-size: 12px;
+    }
+    .d-down-left p, .d-down-right p {
+        font-size: 12px;
+    }
+    #create-new-rout .d-popup-content {
+        width: 80%;
+        border-radius: 25px
+    }
+    .d-new-rout, .d-deliver-list {
+        width: 100%;
+        border-radius: 25px;
+    }
+}
+@media (max-width: 576px) {
+    #create-new-rout .d-popup-content {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .d-rulling-item {
+        width: 280%;
+    }
+}

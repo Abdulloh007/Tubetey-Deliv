@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Тубетей - Delivery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/completed.css">
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="d-left-side dfa-center">
+              <div class="d-logo dfa-center">
+                <img src="assets/img/logo.png" alt="LOGO">
+                <h4>Delivery</h4>
+              </div>
+              <div class="message-btns dfa-center">
+                <button><img src="assets/img/icons/phone.png" alt=""><span>3</span>Обработка</button>
+                <button><img src="assets/img/icons/plane.png" alt=""><span>1</span>Готовые</button>
+              </div>
+            </div>
+            <div class="d-right-side dfa-center">
+                <button id="toggle_menu"><i class="far fa-bars"></i></button>
+              <a class="d-link" href="settings.html">Настройки</a>
+              <div class="d-user-meta dfa-center">
+                <img src="assets/img/icons/user.png" alt="">
+                <h4><span>Менеджер</span> • <span>Камиль</span></h4>
+              </div>
+                <button class="d-add_new_order">Создать новый</button>
+                <button class="d-exit-session"><img src="assets/img/icons/exit.png"></button>
+            </div>
+          </div>
+        </div>
+      <nav>
+        <div class="container">
+          <div class="row">
+            <ul class="d-menu">
+              <li><a href="upon.html">В работе • <span>8</span></a></li>
+              <li><a href="new_orders.html">Новые заказы • <span>7</span></a></li>
+              <li><a href="routs.html">Маршруты • <span>3</span></a></li>
+              <li><a class="active" href="completed.html">Завершенные • <span>16</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col d-rulling-block p-sm-0">
+            <div class="d-rulling-block-top dfa-center justify-content-between">
+              <div class="d-date-filter">
+                  <select>
+                      <option value="25.03">25 марта</option>
+                      <option value="26.03">26 марта</option>
+                      <option value="27.03">27 марта</option>
+                      <option value="28.03">28 марта</option>
+                      <option value="29.03">29 марта</option>
+                  </select>
+                  <span>до</span>
+                  <select>
+                      <option value="25.04">25 апреля</option>
+                      <option value="26.04">26 апреля</option>
+                      <option value="27.04">27 апреля</option>
+                      <option value="28.04">28 апреля</option>
+                      <option value="29.04">29 апреля</option>
+                  </select>
+                  <button type="submit" name="filter">Применить</button>
+              </div>
+              <div class="d-switcher dfa-center">
+                <h4 class="active">Рознечные</h4>
+                <label class="d-switch">
+                  <input type="checkbox">
+                  <span class="d-swich-slider round"></span>
+                </label>
+                <h4>Полуфабрикаты <span>2</span></h4>
+              </div>
+            </div>
+            <div class="d-rulling-content">
+                <div class="d-rulling-item d-flex">
+                  <div class="d-item-state">
+                      <span class="d-done">доставлен</span>
+                      <div class="d-item-date d-flex justify-content-between">
+                          <h4>8873</h4>
+                          <span>23 февроля • 18:00</span>
+                      </div>
+                  </div>
+                  <div class="d-item-address">
+                      <h4>ул. Парижской Коммуны, дом 4, 1 подъезд, 4 квартира</h4>
+                      <p>Позвонить за 5 минут, я встречу</p>
+                  </div>
+                  <div class="d-item-contact">
+                      <h4>+7 999 153-53-96</h4>
+                      <span>Анна</span>
+                  </div>
+                  <div class="d-item-info">
+                      <h4>4 позиции • 560 ₽</h4>
+                      <p>Оплата картой при получении</p>
+                  </div>
+                  <div class="d-item-deadline">
+                      <h4>18:40</h4>
+                      <span>Доставка</span>
+                  </div>
+                  <div class="d-item-deliver-id">
+                      <h4>8875</h4>
+                      <span>Маршрут</span>
+                  </div>
+                  <a class="d-item-more d-flex justify-content-around align-items-center" href="order_page.html">
+                      <i class="far fa-angle-right"></i>
+                  </a>
+                </div>
+                <div class="d-rulling-item d-flex">
+                  <div class="d-item-state">
+                      <span class="d-done">доставлен</span>
+                      <div class="d-item-date d-flex justify-content-between">
+                          <h4>8873</h4>
+                          <span>23 февроля • 18:00</span>
+                      </div>
+                  </div>
+                  <div class="d-item-address">
+                      <h4>ул. Парижской Коммуны, дом 4, 1 подъезд, 4 квартира</h4>
+                      <p>Позвонить за 5 минут, я встречу</p>
+                  </div>
+                  <div class="d-item-contact">
+                      <h4>+7 999 153-53-96</h4>
+                      <span>Анна</span>
+                  </div>
+                  <div class="d-item-info">
+                      <h4>4 позиции • 560 ₽</h4>
+                      <p>Оплата картой при получении</p>
+                  </div>
+                  <div class="d-item-deadline">
+                      <h4>18:40</h4>
+                      <span>Доставка</span>
+                  </div>
+                  <div class="d-item-deliver-id">
+                      <h4>8875</h4>
+                      <span>Маршрут</span>
+                  </div>
+                  <a class="d-item-more d-flex justify-content-around align-items-center" href="order_page.html">
+                      <i class="far fa-angle-right"></i>
+                  </a>
+                </div>
+                <div class="d-rulling-item d-flex">
+                  <div class="d-item-state">
+                      <span class="d-done">доставлен</span>
+                      <div class="d-item-date d-flex justify-content-between">
+                          <h4>8873</h4>
+                          <span>23 февроля • 18:00</span>
+                      </div>
+                  </div>
+                  <div class="d-item-address">
+                      <h4>ул. Парижской Коммуны, дом 4, 1 подъезд, 4 квартира</h4>
+                      <p>Позвонить за 5 минут, я встречу</p>
+                  </div>
+                  <div class="d-item-contact">
+                      <h4>+7 999 153-53-96</h4>
+                      <span>Анна</span>
+                  </div>
+                  <div class="d-item-info">
+                      <h4>4 позиции • 560 ₽</h4>
+                      <p>Оплата картой при получении</p>
+                  </div>
+                  <div class="d-item-deadline">
+                      <h4>18:40</h4>
+                      <span>Доставка</span>
+                  </div>
+                  <div class="d-item-deliver-id">
+                      <h4>8875</h4>
+                      <span>Маршрут</span>
+                  </div>
+                  <a class="d-item-more d-flex justify-content-around align-items-center" href="order_page.html">
+                      <i class="far fa-angle-right"></i>
+                  </a>
+                </div>
+                <div class="d-rulling-item d-flex">
+                  <div class="d-item-state">
+                      <span class="d-done">доставлен</span>
+                      <div class="d-item-date d-flex justify-content-between">
+                          <h4>8873</h4>
+                          <span>23 февроля • 18:00</span>
+                      </div>
+                  </div>
+                  <div class="d-item-address">
+                      <h4>ул. Парижской Коммуны, дом 4, 1 подъезд, 4 квартира</h4>
+                      <p>Позвонить за 5 минут, я встречу</p>
+                  </div>
+                  <div class="d-item-contact">
+                      <h4>+7 999 153-53-96</h4>
+                      <span>Анна</span>
+                  </div>
+                  <div class="d-item-info">
+                      <h4>4 позиции • 560 ₽</h4>
+                      <p>Оплата картой при получении</p>
+                  </div>
+                  <div class="d-item-deadline">
+                      <h4>18:40</h4>
+                      <span>Доставка</span>
+                  </div>
+                  <div class="d-item-deliver-id">
+                      <h4>8875</h4>
+                      <span>Маршрут</span>
+                  </div>
+                  <a class="d-item-more d-flex justify-content-around align-items-center" href="order_page.html">
+                      <i class="far fa-angle-right"></i>
+                  </a>
+                </div>
+                <div class="d-rulling-item d-flex">
+                  <div class="d-item-state">
+                      <span class="d-done">доставлен</span>
+                      <div class="d-item-date d-flex justify-content-between">
+                          <h4>8873</h4>
+                          <span>23 февроля • 18:00</span>
+                      </div>
+                  </div>
+                  <div class="d-item-address">
+                      <h4>ул. Парижской Коммуны, дом 4, 1 подъезд, 4 квартира</h4>
+                      <p>Позвонить за 5 минут, я встречу</p>
+                  </div>
+                  <div class="d-item-contact">
+                      <h4>+7 999 153-53-96</h4>
+                      <span>Анна</span>
+                  </div>
+                  <div class="d-item-info">
+                      <h4>4 позиции • 560 ₽</h4>
+                      <p>Оплата картой при получении</p>
+                  </div>
+                  <div class="d-item-deadline">
+                      <h4>18:40</h4>
+                      <span>Доставка</span>
+                  </div>
+                  <div class="d-item-deliver-id">
+                      <h4>8875</h4>
+                      <span>Маршрут</span>
+                  </div>
+                  <a class="d-item-more d-flex justify-content-around align-items-center" href="order_page.html">
+                      <i class="far fa-angle-right"></i>
+                  </a>
+                </div>
+            </div
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <ul class="footer">
+                    <li>
+                        <a href="#">Tubatay.Delivery.com</a>
+                    </li>
+                    <li>
+                        <a href="#">Сообщить об ошибке</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--- POPUP CONTENT --->
+    <div id="create-new" class="d-popup-overlay d-popup-disable">
+        <div class="d-popup-content">
+            <div class="d-popup-header">
+                <h3>Новый заказ</h3>
+                <i id="close-popup" class="far fa-times"></i>
+            </div>
+            <div class="d-popup-tabs">
+                <button class="active-tab">Новый клиент</button>
+                <button>Клиент в базе</button>
+            </div>
+            <div class="d-popup-tabs-content">
+                <div class="d-popup-tab">
+                    <form class="d-popup-form" action="#">
+                        <label>
+                          <span>Имя</span>
+                            <input type="text" value="Александр">
+                        </label>
+                        <label>
+                          <span>Номер телефона</span>
+                            <input type="tel" value="+7 953 648-54">
+                        </label>
+                        <label>
+                          <span>Улица.дом</span>
+                            <input type="text" value="Восстания, дом 4">
+                        </label>
+                        <label>
+                          <span>Квартира</span>
+                            <input type="text" value="4">
+                        </label>
+                        <label>
+                          <span>Подъезд</span>
+                            <input type="text" value="1">
+                        </label>
+                        <label>
+                          <span>Домофон</span>
+                            <input type="text" value="4">
+                        </label>
+                        <label>
+                          <span>Этаж</span>
+                            <input type="text" value="6">
+                        </label>
+                        <div class="d-form-action">
+                            <button type="submit" name="save">Создать заказ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-popup-tab">
+                    <form class="d-db-client" action="#">
+                        <label class="d-db-label">
+                          <i class="far fa-search"></i>
+                            <input type="search" placeholder="Поиск по номеру">
+                        </label>
+                        <div class="d-search-result">
+                            <div class="d-result-item">
+                                <div class="d-flex">
+                                    <span class="d-result-user"><i class="fal fa-user"></i></span>
+                                    <div class="d-result-info">
+                                        <span>+7 845 457-96-34</span>
+                                        <h4>Ильдар Давлетшин</h4>
+                                    </div>
+                                </div>
+                                <div class="d-item-select-side dfa-center">
+                                    <label class="d-checkbox">
+                                      <input type="checkbox">
+                                      <span class="d-mark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="d-result-item">
+                                <div class="d-flex">
+                                    <span class="d-result-user"><i class="fal fa-user"></i></span>
+                                    <div class="d-result-info">
+                                        <span>+7 845 457-96-34</span>
+                                        <h4>Ильдар Давлетшин</h4>
+                                    </div>
+                                </div>
+                                <div class="d-item-select-side dfa-center">
+                                    <label class="d-checkbox">
+                                      <input type="checkbox">
+                                      <span class="d-mark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="d-result-item">
+                                <div class="d-flex">
+                                    <span class="d-result-user"><i class="fal fa-user"></i></span>
+                                    <div class="d-result-info">
+                                        <span>+7 845 457-96-34</span>
+                                        <h4>Ильдар Давлетшин</h4>
+                                    </div>
+                                </div>
+                                <div class="d-item-select-side dfa-center">
+                                    <label class="d-checkbox">
+                                      <input type="checkbox">
+                                      <span class="d-mark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-form-action">
+                            <button type="submit" name="save">Создать заказ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--- POPUP CONTENT END --->
+
+  </body>
+  <script type="text/javascript" src="common.js"></script>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "tubetay",
+  "version": "1.0.0",
+  "description": "Dashbord",
+  "main": "common.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Abdulloh",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "chart.js": "^3.0.2"
+  }
+}

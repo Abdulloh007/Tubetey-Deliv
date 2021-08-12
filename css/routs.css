@@ -1,0 +1,236 @@
+/*Rulling Block*/
+.d-rulling-block{
+    height: 75vh;
+    overflow-y: scroll;
+}
+/*Scrollbar styles*/
+.d-rulling-block::-webkit-scrollbar{
+    width: 10px;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+}
+.d-rulling-block::-webkit-scrollbar-thumb {
+  background: #b5b5b5;
+  border-radius: 10px;
+  border: 3px solid #e7e7e7;
+}
+.d-rulling-block-top{
+  margin-right: 15px;
+}
+.d-rulling-block-top h4.active{
+    color: var(--green);
+}
+.d-rulling-block-top h4{
+    position: relative;
+    color: #8c9b99;
+}
+.d-rulling-block-top h4 span{
+    position: absolute;
+    top: -20px;
+    left: calc( 45% - 10px );
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 50%;
+    margin: 0 10px;
+    height: 20px;
+    width: 20px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.d-title {
+    color: var(--dark-green);
+    font-weight: 600;
+}
+/*Rulling content*/
+.d-rulling-content {
+  margin-right: 15px;
+}
+.d-rulling-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+.d-item-state {
+    width: 15%;
+    margin-right: 10px;
+}
+.d-item-state select {
+    width: 100%;
+    text-transform: lowercase;
+    font-size: 14px;
+    font-family: 'Mont', sans-serif;
+    font-weight: 500;
+    padding: 5px 10px;
+    background: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+}
+.d-item-state select option {
+    background: var(--white);
+    border: none;
+    color: var(--green);
+    margin-top: 10px;
+}
+.d-item-date {
+    margin-top: 10px;
+    align-items: baseline;
+}
+.d-item-date h4 {
+    margin: 5px 0 0;
+    font-size: 22px;
+    color: var(--dark-green);
+    line-height: 1;
+}
+.d-item-date p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark-green);
+}
+.d-item-date span {
+    color: var(--light-green);
+    font-size: 12px;
+}
+.d-item-info {
+    width: 20%;
+    background: var(--gray);
+    border-radius: 10px;
+    padding: 10px;
+    height: fit-content;
+}
+.d-item-info span {
+    font-size: 14px;
+    color: var(--light-green);
+}
+.d-item-info h4 {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: var(--dark-green);
+}
+.d-item-info hr {
+    border: 1px solid #dedede;
+}
+.d-item-info p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-green);
+}
+.d-item-order-list{
+    width: 65%;
+    text-decoration: none;
+}
+.d-item-order-list ul{
+
+    padding-left: 30px;
+    margin: 0;
+}
+.d-item-order-list li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dedede;
+    color: var(--dark-green);
+}
+.d-item-order-list li:last-child{
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+.d-item-order-list li::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -12px;
+    width: 2px;
+    height: calc( 100% + 10px );
+    background: var(--orange);
+}
+.d-item-order-list li:last-child::before{
+    content: none;
+}
+.d-item-order-list li::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 8px;
+    height: 8px;
+    background: var(--orange);
+    border-radius: 50%;
+}
+.d-item-order-list li p {
+    margin: 0;
+    font-size: 14px;
+}
+.d-item-order-list li p span,.d-finished-routs .d-item-order-list li p span {
+    font-size: 14px;
+    color: var(--dark-green);
+}
+.d-item-order-list li span {
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*HAVE finished Routs*/
+.d-done{
+    color: var(--dark-green);
+    padding: 2px 10px;
+    border-radius: 5px;
+    width: 100%;
+    background: var(--gray);
+    display: block;
+}
+.d-finished-routs .d-item-order-list li::before, .d-finished-routs .d-item-order-list li::after{
+    background: var(--green)
+}
+.d-finished-routs .d-item-order-list li span {
+    color: var(--light-green);
+}
+
+
+/*----------------- MEDIA CSS ----------------*/
+@media (max-width: 1200px) {
+    .d-rulling-content {
+        overflow-x: scroll;
+    }
+    .d-rulling-item {
+        width: 135%;
+    }
+}
+@media (max-width: 992px) {
+    .d-title {
+        font-size: 16px;
+    }
+    .d-rulling-item {
+        width: 165%;
+    }
+    .d-rulling-block-top h4 {
+        font-size: 14px;
+    }
+    .d-rulling-block-top h4 span {
+        font-size: 10px;
+        height: 15px;
+        width: 15px;
+        top: -15px;
+    }
+}
+@media (max-width: 768px) {
+    .d-item-info h4{
+        font-size: 14px;
+    }
+    .d-item-info span {
+        font-size: 12px;
+    }
+}
+@media (max-width: 576px) {}
